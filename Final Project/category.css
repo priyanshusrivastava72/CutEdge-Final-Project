@@ -1,0 +1,482 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+  .header {
+      width: 100%;
+      height: 64px;
+      background-color: rgba(255, 255, 255, 1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 5px 8px 0 rgba(2, 203, 138, 1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 100px;
+    }
+ .header-logo img {
+            height: 60px;
+        }
+    .header-logo {
+      font-family: "Brush Script MT", cursive;
+      font-size: 28px;
+      font-weight: bold;
+      color: #1e4b8a;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-nav a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      padding: 0 20px;
+    }
+
+    .header-nav a.active {
+      color: rgba(2, 203, 138, 1);
+      font-weight: 700;
+    }
+
+    .header-button {
+      padding: 10px 20px;
+      background-color: rgba(0, 142, 200, 1);
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f0f8ff 0%, #e1f5fe 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        /* Categories Section */
+        .categories {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .category-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 4px solid rgba(43, 108, 176, 1);
+        }
+        .category-card2 {
+            background: #fff;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 4px solid rgba(56, 161, 105, 1);
+        }
+        .category-card3 {
+            background: #fff;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top:4px solid rgba(221, 107, 32, 1);
+        }
+
+
+
+        
+
+        .category-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .pharma-icon { background: rgba(219, 234, 254, 1); }
+        .herbal-icon { background: rgba(220, 252, 231, 1);}
+        .nutra-icon { background:rgba(255, 237, 213, 1);}
+
+        .category-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .category-card p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .category-button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            
+        }
+
+        .explore-pharma { background: rgba(43, 108, 176, 1); color: white; }
+        .explore-herbal { background: rgba(56, 161, 105, 1); color: white; }
+        .explore-nutra { background: rgba(221, 107, 32, 1); color: white; }
+
+        
+        /* Features Section */
+        .features {
+            background:rgba(243, 244, 246, 1);
+            padding: 60px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background:  rgba(219, 234, 254, 1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .feature-icon2 {
+            width: 50px;
+            height: 50px;
+            background:rgba(220, 252, 231, 1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .feature-icon3 {
+            width: 50px;
+            height: 50px;
+            background:rgba(255, 237, 213, 1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        
+
+
+        .feature-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .feature-content p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Testimonial */
+        .testimonial {
+            background: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .testimonial blockquote {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .testimonial cite {
+            color: #2196F3;
+            font-weight: bold;
+        }
+
+        /* Partner Section */
+        .partner-section {
+            background:linear-gradient(90deg, #2B6CB0 0%, #1D4ED8 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .partner-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .partner-section p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .contact-btn {
+            background: white;
+            color: #2196F3;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        
+        /* Footer */
+      .footer {
+      width: 100%;
+      background-color: rgba(17, 24, 39, 1);
+      padding: 50px 100px;
+      color: #ccc;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo-text {
+      width: 30%;
+    }
+
+    .logo1 {
+      font-family: "Brush Script MT", cursive;
+      font-size: 38px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .footer-logo-text p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .footer-social a {
+      color: #ccc;
+      margin-right: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: #4CAF50;
+    }
+
+    .footer-links {
+      width: 20%;
+    }
+
+    .footer-links h4 {
+      font-size: 1.2em;
+      font-weight: 500;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links ul li a {
+      text-decoration: none;
+      color: #ccc;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links ul li a:hover {
+      color: #4CAF50;
+    }
+
+    .footer-contact {
+      width: 30%;
+    }
+
+    .footer-contact h4 {
+      font-size: 1.2em;
+      font-weight: 500;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .footer-contact-item .icon {
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+
+    .footer-contact-item p {
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .footer-bottom-links a {
+      text-decoration: none;
+      color: #ccc;
+      margin-left: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-bottom-links a:hover {
+      color: #4CAF50;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      .header {
+        padding: 0 20px;
+      }
+
+      .hero,
+      .stats,
+      .overview,
+      .trust-section,
+      .products-section,
+      .journey-section,
+      .vision-section,
+      .contact-section {
+        padding: 60px 20px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .overview-content,
+      .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .timeline-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+
+      .timeline-line {
+        display: none;
+      }
+
+      .footer {
+        padding: 30px 20px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .footer-logo-text, .footer-links, .footer-contact {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .timeline-items {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+    }
